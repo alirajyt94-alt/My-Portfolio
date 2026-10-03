@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('raj_portfolio_theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    <title>Raj – Senior Full-Stack Web Developer & Bot Developer</title>
+    <meta name="description" content="Explore featured inspiration projects, scalable system architecture, and client case studies by Raj. Specializing in high-performance web and cloud solutions." />
+    <meta name="author" content="Raj" />
+    <meta name="keywords" content="Raj, Full-Stack Web Developer, Bot Developer, React, TypeScript, Cloud Systems, Telegram Bots, Discord Bots, Automation, Portfolio" />
+    
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Raj — Portfolio" />
+    <meta property="og:title" content="Raj – Senior Full-Stack Web Developer & Bot Developer" />
+    <meta property="og:description" content="Explore featured inspiration projects, scalable system architecture, and client case studies by Raj. Specializing in high-performance web and cloud solutions." />
+    <meta property="og:image" content="/src/assets/images/project_fintech_dashboard_1791023462842.jpg" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raj – Senior Full-Stack Web Developer & Bot Developer" />
+    <meta name="twitter:description" content="Explore featured inspiration projects, scalable system architecture, and client case studies by Raj. Specializing in high-performance web and cloud solutions." />
+    <meta name="twitter:image" content="/src/assets/images/project_fintech_dashboard_1791023462842.jpg" />
+
+    <!-- Performance & Font Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Raj",
+      "jobTitle": "Senior Full-Stack Web Developer & Bot Developer",
+      "description": "Building high-throughput web applications, intelligent automation bots, and scalable cloud solutions.",
+      "url": "https://github.com/mrraj23",
+      "sameAs": [
+        "https://github.com/mrraj23"
+      ],
+      "knowsAbout": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Cloud Architecture",
+        "Distributed Systems",
+        "Performance Optimization",
+        "Full-Stack Development"
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-[#07090e] dark:text-slate-100 antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
